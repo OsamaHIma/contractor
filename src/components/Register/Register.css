@@ -1,0 +1,50 @@
+@media (max-width: 798px) {
+    .inputsRegister{
+        width: 90%;
+    }
+    .normalText{
+        font-size: 20px !important;
+        text-align: center;
+    }
+}
+@media (min-width: 799px) {
+    .inputsRegister{
+        width: 70%;
+    }
+}
+@media (min-width: 999px) {
+    .inputsRegister{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .inputsRegister{
+        width: 35%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .inputsRegister{
+        width: 25%;
+    }
+}
+
+.inputsRegister input{
+    background-color: transparent;
+    padding: 7px 7px 7px 20px;
+    color: white;
+    font-size: 22px;
+    border: 1px solid #7DB00E;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.inputsRegister input::placeholder{
+    color: white;
+} 
+
+.css-12pl4rd-MuiGrid-root, 
+.css-19epwns-MuiTypography-root{
+    background-color: #10394A;
+}

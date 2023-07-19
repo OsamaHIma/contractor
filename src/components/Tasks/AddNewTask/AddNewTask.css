@@ -1,0 +1,18 @@
+.BigMain[Task=true] .ADD-Task {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Task=true] .ADD-Task::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Task=true] .ADD-Task::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Task=true] .ADD-Task::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

@@ -1,0 +1,17 @@
+.BigMain[status=true] .ADD-Project {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto
+}
+
+.BigMain[status=true] .ADD-Project::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[status=true] .ADD-Project::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[status=true] .ADD-Project::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

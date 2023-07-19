@@ -1,0 +1,17 @@
+.BigMain[client=true] .ADD-Client {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto
+}
+
+.BigMain[client=true] .ADD-Client::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[client=true] .ADD-Client::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[client=true] .ADD-Client::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

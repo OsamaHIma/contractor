@@ -1,0 +1,18 @@
+.BigMain[Payment=true] .ADD-Payment {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Payment=true] .ADD-Payment::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Payment=true] .ADD-Payment::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Payment=true] .ADD-Payment::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

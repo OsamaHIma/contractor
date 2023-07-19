@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #012939;
+  --secondary-color: #7db00e;
+  --blue-color: #10394A;
+  --gray-color: #767676;
+}
+
+body {
+  margin: 0;
+  background-color: #10394A;
+}
+
+.css-zxdg2z {
+  padding: 24px 10px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: #012939 !important;
+  padding: 20px;
+  border: 1px solid rgba(219, 219, 219, 0.589);
+  border-radius: 15px !important;
+}
+
+.textColor::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.BigMain {
+  min-height: 100vh;
+}
+
+
+
+/**********************Dark Mode***********************************/
+
+.BigMain[dark=true] {
+  background-color: #10394A;
+}
+
+.BigMain[dark=false] {
+  background-color: #F5F5F5;
+}
+
+.BigMain[dark=true] th.MuiTableCell-root {
+  background: linear-gradient(180deg, #7DB00E 0%, #377114 100%) !important;
+}
+
+.BigMain[dark=false] th {
+  background: linear-gradient(180deg, #012939 0%, #0F6581 100%);
+  color: white !important;
+}
+
+.BigMain[dark=false] h4,
+.BigMain[dark=false]>span>span,
+.BigMain[dark=false]>span span.MuiTypography-div,
+.BigMain[dark=false] .MuiInputBase-input {
+  color: black !important;
+}
+
+.BigMain[dark=false] input {
+  color: black !important;
+  border: 1px solid black;
+  background-color: rgba(198, 222, 232, 0.4);
+  border-radius: 8px;
+}
+
+.BigMain[dark=false] .css-1gwhpyi {
+  color: black !important;
+}
+
+.BigMain[dark=true] .textColor {
+  color: white !important;
+}
+
+.BigMain[dark=false] .textColor {
+  color: black !important;
+}
+
+.BigMain[dark=true] .textColorMessage {
+  color: #CBCBCB !important;
+}
+
+.BigMain[dark=false] .textColorMessage {
+  color: black !important;
+}
+
+.BigMain[dark=true] .paymentText {
+  color: white !important;
+}
+
+.BigMain[dark=false] .paymentText {
+  color: black !important;
+}
+
+.BigMain[dark=false] .MuiTableCell-root {
+  background-color: #D4E8EF;
+  color: black;
+}
+
+.BigMain[dark=false] .MuiTableCell-root span {
+  color: black;
+}
+
+/*****************************************************************/
+
+a span {
+  letter-spacing: 1px !important;
+}
+
+.Text {
+  color: white;
+}
+
+.MuiCheckbox-root svg {
+  color: #77B255 !important;
+}
+
+.inp::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btnLogin {
+  background: transparent;
+  color: white;
+  border: 1px solid #7DB00E;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnLogin::placeholder {
+  color: white;
+}
+
+.PriceText input {
+  padding: 6px;
+}
+
+.MuiDrawer-paper,
+.css-3oglve-MuiPaper-root-MuiTableContainer-root,
+.MuiTableContainer-root,
+.MuiMenu-paper {
+  background-color: #012939 !important;
+}
+
+.MuiPaper-elevation div {
+  color: white;
+}
+
+
+
+.timeSheet {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+.MuiDrawer-root div .MuiTypography-root {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 131.9%;
+}
+
+.css-1hsz34s-MuiDrawer-docked .MuiListItem-gutters {
+  margin-left: 10px !important;
+  border-radius: 10px;
+  border-right: 0;
+}
+
+.css-1hsz34s-MuiDrawer-docked .logo1 {
+  display: block;
+}
+
+.css-1hsz34s-MuiDrawer-docked .logo2 {
+  display: none;
+}
+
+.MuiDrawer-root .MuiListItem-gutters:hover,
+a.active .MuiListItem-gutters {
+  background-color: #377114!important;
+}
+
+@media (min-width: 450px) {
+  body[state='false'] .MuiDrawer-paperAnchorLeft {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .HeaderRight {
+    margin-right: 50px !important;
+  }
+}
+
+@media (min-width: 657px) {
+  .HeaderRight {
+    margin-right: 20px !important;
+  }
+}
+
+@media (max-width: 655px) {
+  body[state='true'] .MuiDrawer-paperAnchorLeft {
+    display: none !important;
+  }
+  .bar {
+    display: flex !important;
+  }
+  .css-2dum1v-MuiDrawer-docked {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1300px) {
+  .paymentText {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+/* For Dark Mode Switch */
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase .MuiSwitch-input {
+  left: 0 !important;
+}
+
+span.Mui-checked .MuiSwitch-thumb {
+  background-color: rgb(49, 49, 49) !important;
+}
+
+.MuiSwitch-thumb {
+  background-color: rgb(196, 196, 196) !important;
+}
+
+.MuiSwitch-track {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+/* Form */
+
+.css-37jdci-MuiTypography-root {
+  padding-left: 0;
+}
+
+.MuiTypography-root input {
+  width: 100% !important;
+}
+
+.MuiFormControl-root {
+  margin: 10px 0 !important;
+}
+
+.MuiSelect-select {
+  padding: 7px !important;
+}
+
+.MuiInputBase-formControl {
+  border-radius: 15px !important;
+  padding: 2px 2px 2px 5px;
+  border: 1px solid #377114;
+  outline: none !important;
+  color: white !important;
+}
+
+.MuiSelect-iconOutlined {
+  color: white !important;
+}
+
+.MuiMenu-list {
+  color: white;
+}
+
+.MuiMenu-paper .MuiButtonBase-root:hover {
+  background-color: #10394A;
+}
+
+.tableClient tr th:last-child {
+  text-align: center !important;
+}
+
+.tableClientBody td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+}
+
+.tableClientBody td:last-child {
+  text-align: center !important;
+}
+
+/*invoice*/
+
+.invoice .css-78me8v-MuiFormControl-root,
+.invoice .css-q8hpuo-MuiFormControl-root {
+  margin: 5px 0 !important;
+}
+
+.invoice input,
+.invoice .MuiOutlinedInput-root {
+  margin: 5px 0 !important;
+  height: 40px
+}
+
+.invoice .css-tzqvgi-MuiTypography-root,
+.invoice .css-jtlyof-MuiTypography-root {
+  margin: 5px 0 !important;
+}
+
+/* .timeSheet .react-calendar__viewContainer{
+  display: none;
+} */
+
+/*Recharts*/
+
+g.recharts-cartesian-grid {
+  display: none;
+}
+
+
+/*inputs*/
+
+input[type=date]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  right: 0;
+  margin: 0 -10px 0 0;
+  padding: 0;
+
+
+}

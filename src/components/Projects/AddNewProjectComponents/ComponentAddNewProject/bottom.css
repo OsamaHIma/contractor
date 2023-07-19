@@ -1,0 +1,7 @@
+.parentInputImg{
+    max-width: 100%;
+}
+
+input[type="file"]{
+    display: none !important;
+}

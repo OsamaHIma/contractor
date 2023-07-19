@@ -1,0 +1,14 @@
+select {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+select option {
+    @apply bg-dark-slate;
+    color: #f9fafb;
+    font-size: 16px;
+    padding:1rem
+}
+select option:hover {
+    @apply !bg-dark-green/70
+}

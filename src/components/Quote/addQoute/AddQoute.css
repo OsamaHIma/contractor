@@ -1,0 +1,17 @@
+.BigMain[Quote=true] .ADD-Quote {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+}
+
+.BigMain[Quote=true] .ADD-Quote::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Quote=true] .ADD-Quote::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Quote=true] .ADD-Quote::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

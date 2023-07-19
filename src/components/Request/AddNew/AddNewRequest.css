@@ -1,0 +1,18 @@
+.BigMain[Request=true] .ADD-Request {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Request=true] .ADD-Request::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Request=true] .ADD-Request::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Request=true] .ADD-Request::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

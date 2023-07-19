@@ -1,0 +1,17 @@
+.BigMain[company=true] .ADD-Company {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto
+}
+
+.BigMain[company=true] .ADD-Company::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[company=true] .ADD-Company::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[company=true] .ADD-Company::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

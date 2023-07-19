@@ -1,0 +1,25 @@
+.BigMain[Emp=true] .ADD-Emp {
+    width: 100%;
+    padding: 20px !important;
+    overflow: hidden ;
+  }
+  
+  .BigMain[Emp=true] .ADD-Emp:hover {
+    overflow: auto !important;
+
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+/* 
+.BigMain[Emp=true] .ADD-Emp::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Emp=true] .ADD-Emp::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Emp=true] .ADD-Emp::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+} */

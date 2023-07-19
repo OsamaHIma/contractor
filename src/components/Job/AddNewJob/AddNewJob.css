@@ -1,0 +1,18 @@
+.BigMain[Job=true] .ADD-Job {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Job=true] .ADD-Job::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Job=true] .ADD-Job::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Job=true] .ADD-Job::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

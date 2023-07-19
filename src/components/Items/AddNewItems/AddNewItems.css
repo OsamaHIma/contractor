@@ -1,0 +1,18 @@
+.BigMain[Items=true] .ADD-Items {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Items=true] .ADD-Items::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Items=true] .ADD-Items::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Items=true] .ADD-Items::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

@@ -1,0 +1,18 @@
+.BigMain[Invoice=true] .ADD-Invoice {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Invoice=true] .ADD-Invoice::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Invoice=true] .ADD-Invoice::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Invoice=true] .ADD-Invoice::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}

@@ -1,0 +1,18 @@
+.BigMain[Expense=true] .ADD-Expense {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+    
+}
+
+.BigMain[Expense=true] .ADD-Expense::-webkit-scrollbar {
+    width: 0px;
+}
+/* 
+.BigMain[Expense=true] .ADD-Expense::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Expense=true] .ADD-Expense::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+} */

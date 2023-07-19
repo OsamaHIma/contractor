@@ -1,0 +1,17 @@
+.BigMain[Profession=true] .ADD-Profession {
+    width: 100%;
+    padding: 20px !important;
+    overflow: auto;
+}
+
+.BigMain[Profession=true] .ADD-Profession::-webkit-scrollbar {
+    width: 20px;
+}
+
+.BigMain[Profession=true] .ADD-Profession::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.BigMain[Profession=true] .ADD-Profession::-webkit-scrollbar-thumb {
+    background-color: #0e2b3a;
+}
