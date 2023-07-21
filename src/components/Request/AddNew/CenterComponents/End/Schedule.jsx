@@ -1,7 +1,7 @@
 import { Checkbox, FormControl, FormControlLabel, FormGroup, Grid, OutlinedInput, Radio, RadioGroup, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
-import iconCalender from "../../../../../Icons/material-symbols_date-range-outline-rounded.png"
+import iconCalender from "/icons/material-symbols_date-range-outline-rounded.png"
 
 function Schedule({ start_time, setStart_time, day, setDay }) {
 

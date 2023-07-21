@@ -4,7 +4,7 @@ import { sendDataAsync } from "../../../../Redux/Slices/sendData/sendDataSlice";
 import Notify from "../../../Notify";
 import Footer from "./Footer/Footer";
 import AddIcon from "@mui/icons-material/Add";
-import expenseIcon from "../../../../Icons/expense.png";
+import expenseIcon from "/icons/expense.png";
 import AddImgComponent from "./AddImg/AddImgComponent";
 import { ToastContainer } from "react-toastify";
 
