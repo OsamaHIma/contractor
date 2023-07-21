@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Logo from "/icons/Logo.png";
+import Logo from "../../Icons/Logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginAsync } from "../../Redux/Slices/LoginSlice";

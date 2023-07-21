@@ -1,12 +1,22 @@
-import { Checkbox, FormControl, FormControlLabel, MenuItem, Select, Typography } from '@mui/material'
-import React from 'react'
+import { Checkbox, Chip, FormControl, FormControlLabel, MenuItem, Select, Typography } from '@mui/material'
+import React, { useState } from 'react'
 import useTeam from '../../../../../Hooks/useTeam'
 import TeamsAdded from './TeamsAdded'
+import { Clear} from '@mui/icons-material'
 
 function TeamComponent({ setSubtotal , subtotal}) {
 
     const {team , DeleteItem } = useTeam()
+    const [selectedMembers, setSelectedMembers] = useState(['Ali',"Mohammed"]);
 
+    const handleMemberSelect = (event) => {
+        const selected = event.target.value;
+        setSelectedMembers([...selectedMembers, selected]);
+    };
+
+    const handleMemberRemove = (member) => {
+        setSelectedMembers(selectedMembers.filter((m) => m !== member));
+    };
 
     return (
         <Typography variant='div' component="div" sx={{
@@ -25,9 +35,8 @@ function TeamComponent({ setSubtotal , subtotal}) {
             </Typography>
             <FormControl sx={{ width: "100%" }}>
                 <Select
-
-                    value={subtotal}
-                    onChange={(e) =>setSubtotal(e.target.value)}
+                    value={''}
+                    onChange={handleMemberSelect}
                     displayEmpty
                     inputProps={{ 'aria-label': 'Without label' }}
                     sx={{
@@ -36,24 +45,46 @@ function TeamComponent({ setSubtotal , subtotal}) {
                         marginTop: "10px"
                     }}
                 >
-                    <MenuItem value="0">
+                    <MenuItem value={''}>
                         <span>Choose team :</span>
                     </MenuItem>
-                    <MenuItem value={"Ten"}>Ten</MenuItem>
-                    <MenuItem value={"Twenty"}>Twenty</MenuItem>
-                    <MenuItem value={"Thirty"}>Thirty</MenuItem>
+                    <MenuItem value={"Ali"}>Ali</MenuItem>
+                    <MenuItem value={"Omar"}>Omar</MenuItem>
+                    <MenuItem value={"Ahmed"}>Ahmed</MenuItem>
                 </Select>
-
+               <div className="flex gap-3 flex-wrap">
+               {selectedMembers.map((member) => (
+                    <Chip
+                        key={member}
+                        label={member}
+                        onDelete={() => handleMemberRemove(member)}
+                        sx={{
+                            background: "#5b737c",
+                            color: "white",
+                            display:"flex",
+                            width:"150px",
+                            justifyContent:"space-between",
+                            paddingY:"1.7rem",
+                            borderRadius: "7px",
+                            marginTop: "10px",
+                            '& .MuiChip-icon': {
+                                color: 'rgba(255, 255, 255, 0.7)',
+                            },
+                            '& .MuiChip-icon:hover': {
+                                color: 'rgba(255, 255, 255, 1)',
+                            },
+                        }}
+                        deleteIcon={<Clear className=' !text-slate-100'/>}
+                    />
+                ))}
+               </div>
                 <div className='d-flex flex-wrap'>
                     <TeamsAdded team={team} DeleteItem={DeleteItem}/>
                 </div>
-
             </FormControl>
-
             <Typography sx={{ marginTop: "15px" }} variant='div' component="div">
                 <FormControlLabel control={<Checkbox sx={{ color: "#7DB00E" }} />} sx={{ color: "white" }} label="Email team about assignment" />
             </Typography>
-
         </Typography>
     )
 }

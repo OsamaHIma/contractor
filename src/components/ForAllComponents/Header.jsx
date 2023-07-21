@@ -1,60 +1,47 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Switch, Typography } from '@mui/material'
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import Interrogative from "../../../src/Icons/interrogative.png"
-import React from 'react'
+import { Switch } from "@mui/material";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import Interrogative from "../../../src/Icons/interrogative.png";
+import React from "react";
 
-function HeaderComp({ checked, setChecked , noCheack}) {
+function HeaderComp({ checked, setChecked, noCheack }) {
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
 
+  return (
+    <div className="flex justify-between items-center">
+      <div className="text-2xl font-bold text-gray-800 dark:text-white">
+        Company Name
+      </div>
+      <div>
+        {!noCheack && (
+          <div className="flex items-center">
+            <Switch checked={checked} onChange={handleChange} />
 
-    const handleChange = (event) => {
-        setChecked(event.target.checked);
-    };
+            <div
+              className={
+                "text-lg font-bold ml-2 " +
+                (checked ? " text-white" : "text-gray-800 dark:text-white")
+              }
+            >
+              Dark Mode
+            </div>
+          </div>
+        )}
 
-    return (
-        <Typography variant='div' sx={
-            {
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center"
+        <div className="flex items-center">
+          <NotificationsNoneIcon
+            className={
+              "w-8 h-8 mr-2 " + (checked ? "text-white" : "text-gray-800")
             }
-        }>
-            <Typography variant='div' sx={{
-                color: checked? "rgba(243, 243, 243, 0.7)" : "black",
-                fontSize: "24px",
-                fontFamily: ""
+          />
 
-            }}>
-                Company Name
-            </Typography>
-
-            <Typography className='me-5 me-md-0 me-xl-2 HeaderRight' variant='div' sx={{ display: "flex", alignItems: "center" }}>
-                
-                {noCheack ? null : (
-                <>
-                    <Switch
-                        checked={checked}
-                        onChange={handleChange}
-                        inputProps={{ 'aria-label': 'controlled' }}
-                    />
-                    
-                    <Typography className='d-none d-md-block' variant='div' sx={{ color: checked?  "white" : "black", fontWeight: "bold", fontSize: "22px", fontFamily: "" }}>
-                        Dark Mode
-                    </Typography>
-                </>
-                )}
-
-                <Typography variant='div' sx={{ color: "white", fontWeight: "bold", marginLeft: "20px", cursor: "pointer" }}>
-                    <NotificationsNoneIcon sx={{ fontSize: "30px" ,  color: checked? "white" : "black" }} />
-                </Typography>
-
-                <Typography variant='div' sx={{ color: checked? "white" : "black", fontWeight: "bold", marginLeft: "10px", cursor: "pointer" }}>
-                    <img src={Interrogative} />
-                </Typography>
-            </Typography>
-
-        </Typography>
-    )
+          <img src={Interrogative} className="h-8 w-8 mr-2" />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default HeaderComp
+export default HeaderComp;

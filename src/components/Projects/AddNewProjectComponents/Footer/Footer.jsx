@@ -13,7 +13,6 @@ function Footer({HandleClick , start_time , setStart_time , end_time , setEnd_ti
         <Typography variant='div' component="div" sx={{ marginTop: "25px" }}>
             <Grid container spacing={{ md: 4 }}>
                 <Grid item md={5} xs={12}>
-                    <Schedule start_time={start_time} setStart_time={setStart_time} end_time={end_time} setEnd_time={setEnd_time} title={'Schedule:'} inputText={true} active={"Schedule later"} />
                     <Secgedule title={"Supervisor:"} select={"Choose supervisor"} active={"Email supervisor about assignment"} />
                     <TeamComponent   setSubtotal={setSubtotal}  subtotal={subtotal}/>
                     <TaskComponent title={"Task:"}  />

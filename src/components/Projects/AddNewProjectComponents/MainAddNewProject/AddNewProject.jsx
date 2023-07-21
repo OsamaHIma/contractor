@@ -92,7 +92,7 @@ function AddNewProject() {
             height: "100%"
         }}>
             <HeaderAddNew />
-            <CenterAddNew budget={budget} setBudget={setBudget} setImg={setImg} img={img} setFile={setFile} file={file} setName={setName} name={name}/>
+            <CenterAddNew budget={budget} setBudget={setBudget} setImg={setImg} img={img} setFile={setFile} file={file} setName={setName} name={name } start_time={start_time} setStart_time={setStart_time} end_time={end_time} setEnd_time={setEnd_time} />
             <Footer setSubtotal={setSubtotal}  subtotal={subtotal} start_time={start_time} setStart_time={setStart_time} end_time={end_time} setEnd_time={setEnd_time} HandleClick={HandleClick}/>
             <ToastContainer autoClose={3000} />
 

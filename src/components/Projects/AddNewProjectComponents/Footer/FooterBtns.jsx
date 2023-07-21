@@ -10,7 +10,8 @@ function FooterBtns({HandleClick}) {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            flexWrap: "wrap"
+            flexWrap: "wrap",
+            marginTop:"1rem"
         }}>
             <Typography variant='div' component="div">
                 <Button sx={{
